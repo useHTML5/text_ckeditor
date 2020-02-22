@@ -5,7 +5,7 @@ Wraps default ckeditor plugin in class .ckeditor_text and add some new styles to
 
 ::
 
-    git+https://github.com/useHTML5/text_ckeditor.git@0.1#egg=text_ckeditor # галерея
+    git+https://github.com/useHTML5/text_ckeditor.git@0.2#egg=text_ckeditor # галерея
 
     pip install djangocms-light-gallery
 
