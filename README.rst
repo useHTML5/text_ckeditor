@@ -5,7 +5,7 @@ Wraps default ckeditor plugin in class .ckeditor_text and add some new styles to
 
 ::
 
-    git+https://github.com/useHTML5/text_ckeditor.git@0.3#egg=text_ckeditor # галерея
+    git+https://github.com/useHTML5/text_ckeditor.git@0.4#egg=text_ckeditor # галерея
 
     pip install djangocms-light-gallery
 
@@ -13,8 +13,14 @@ Wraps default ckeditor plugin in class .ckeditor_text and add some new styles to
     // ...
     'text_ckeditor', # self djangocms_text_ckeditor
     'djangocms_text_ckeditor',  # cms
+    '',
     // ...
 
+    COMPRESS_PRECOMPILERS = (
+        ('text/x-scss', 'django_libsass.SassCompiler'),
+    )
+
     python manage.py migrate text_ckeditor
+
 
 ..
