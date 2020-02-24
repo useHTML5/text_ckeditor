@@ -17,9 +17,12 @@ FA_CACHE_PATH = "{}/fontawesome.css".format(static_path)
 BS_CACHE_PATH = getattr(settings, "BS_CACHE_PATH", BS_CACHE_PATH)
 FA_CACHE_PATH = getattr(settings, "FA_CACHE_PATH", FA_CACHE_PATH)
 
+BS_URL = getattr(settings, "BS_URL", '/static/bootstrap.css')
+FA_URL = getattr(settings, "FA_URL", '/static/fontawesome.css')
+
 EDITOR_ADD = [
-    BS_CACHE_PATH,
-    FA_CACHE_PATH,
+    BS_URL,
+    FA_URL,
 ]
 
 def create_scss():
